@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/burger.css">
+    <link rel="stylesheet" href="./css/accordion.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/modaltg.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/dynamicCategories.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/tetris.css">
+    <link rel="stylesheet" href="./css/contacts.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="header__nav">
+              <a href="#main">
+                  <img
+                  src="./img/astronauthelmet_96198.svg"
+                  alt=""
+                  />
+              </a>
+              <ul class="nav">
+                  <li><a href="#main">Main</a></li>
+                  <li><a href="#sec-accordion">Facts</a></li>
+                  <li><a href="#Contacts">Contacts</a></li>
+                  <li><a href="#Spyper">Guard</a></li>
+                  <li><a href="#Tetramino">Mini-Game</a></li>
+                  <li><a href="#Categories">Affiliated-Societies</a></li>
+              </ul>
+              <div class="mobile-btn">
+                  <span></span>
+              </div>
+              </div>
+        </div>
+        <div class="backdrop"></div>
+      </header>
+      
+        <main id="main">
+          
+            <div class="container">
+               <div class="main__wrap">
+              
+                  <h1 class="morph">Тумманость Ориона</h1>
+                  <p class="skill__description"> эмиссионная и отражательная туманность, а также область звездообразования в созвездии Ориона. Имеет видимый блеск около 4m, что делает её не только видимой невооружённым глазом, но и самой яркой диффузной туманностью и одним из самых ярких объектов глубокого космоса</p>
+                  <button id="showForm">Билеты на экскурсию</button>
+               </div>
+            </div>
+         </main>
+      
+    
+           <section id="tetramino">
+            <h1>Тетрамино в космосе</h1>
+            <div class="canvas_wrap">
+                
+                <canvas id="tetris" width="240" height="400"></canvas>
+                <button type="button" id="start_game">Start</button>
+            </div>
+           </section>
+
+
+
+           <section id="Categories"> 
+            <div class="container cat__container"> 
+                <h2>Наши филиалы</h2> 
+                <p>Примечание: все цены указаны в долларах , а в описании город филиала , адрес указан в названии</p>
+                <!-- ..<select class="categories__choise"></select>  -->
+                 <div class="wrap-btn"></div>
+                <form> 
+                   <!-- ? <input type="text" class="search">  -->
+                    <!-- <button type="submit">Search</button>  -->
+                    <button type="button">Sort</button>
+                    <!-- <button id="SortButton" type="button" class="clear">X</button>  -->
+                 
+                </form> 
+     
+                <div class="output"></div> 
+                <div class="message"></div>
+            </div> 
+        </section> 
+        <section id="sec-accordion">
+            <div class="container">
+               <div class="accordion">
+                  <div class="accordion-item">
+                     <div class="accordion-button" onclick="toggleAccordion(this)">Могила на Луне</div>
+                     <div class="accordion-content">Юджин Шумейкер единственный человек похороненный на нуле . Он подготавливал большую часть астронавтов к полету на луну после авария его прах похоронили на Луне
+                     </div>
+                  </div>
+                  <div class="accordion-item">
+                     <div class="accordion-button" onclick="toggleAccordion(this)">у Меркурия есть хвост</div>
+                     <div class="accordion-content"> Многие знают, что у комет есть хвост. Но вы когда-нибудь слышали про хвостатую планету? За Меркурием тянется след из атомов натрия, которые солнечный ветер сдувает с поверхности планеты. Со стороны он выглядит как хвост, характерный для комет. Его непросто увидеть: для этого нужно сделать фото с длинной выдержкой с помощью телескопа и специального фильтра.</div>
+                  </div>
+                  <div class="accordion-item">
+                     <div class="accordion-button" onclick="toggleAccordion(this)">Луна покидает земную орбиту</div>
+                     <div class="accordion-content">Луна постепенно удаляется от нашей планеты. Правда, происходит это с очень незначительной скоростью — 38 мм в год. Исследователи из Висконсинского университета в Мэдисоне и Колумбийского университета рассчитали, что 1,5 млрд лет назад земные сутки длились примерно 18 часов..</div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-button" onclick="toggleAccordion(this)">В космосе царит тишина</div>
+                    <div class="accordion-content">Самым тихим местом на нашей планете считается безэховая камера в Лаборатории Орфилда — она поглощает до 99,99% звуков. Но даже там услышать абсолютную тишину не получится. Ее нарушит работа наших легких и кровеносной системы</div>
+                 </div>
+                 <div class="accordion-item">
+                    <div class="accordion-button" onclick="toggleAccordion(this)"> В Солнечной системе может быть больше восьми планет</div>
+                    <div class="accordion-content"> Солнечная система — наиболее изученная часть космического пространства. По официальной версии, она включает восемь планет. В действительности их значительно больше. Одних только «карликов» здесь насчитывается не меньше пяти. Это Плутон, Церера, Хаумеа, Макемаке и Эрида. Из-за удаленности от Земли они мало изучены. </div>
+                 </div>
+                 <div class="accordion-item">
+                    <div class="accordion-button" onclick="toggleAccordion(this)">Планета из графита и алмазов</div>
+                    <div class="accordion-content"> Еще одну таинственную планету астрономы обнаружили в созвездии Рака. По мнению сотрудников Йельского университета, она вдвое больше и в восемь раз тяжелее Земли. Но главное — Янссен почти целиком состоит из графита и алмазов. Причем на долю последних приходится треть его вещества. Forbes оценил стоимость планеты в $26,9 нониллионов. </div>
+                 </div>
+              
+              
+               </div>
+            </div>
+         </section>
+    
+         <div class="modalka" id="spamModal">
+            <span class="close-btn" onclick="closeModal()">X</span>
+            <p class="reklama">Я Бексултан</p>
+          </div>
+       
+
+           <section id="Spyper">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><p>Почему нам стоит доверять</p></div>
+                  <div class='swiper-slide'>Полная Гарантия качества и договоренности с гигантами маркетинга</div>
+                  <div class="swiper-slide">Нам доверяют такие гиганты  как Tide , Джинн , SpaceX</div>
+                  <div class="swiper-slide">Также мы имеем все полисы и разрешения по регламенту качества</div>
+                  
+                </div>
+                <div class="swiper-button-next"><img src="./img/icons8-атом.svg" alt=""></div>
+                <div class="swiper-button-prev"><img src="./img/icons8-атом.svg" alt=""></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            
+           </section>
+           <section id="Srt">
+            <div class="swiper myySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><p>График работы <br>Понедельник 12:00-24:00 <br>Вторник 6:00-12:00 <br>Среда 3:00-12:00 <Br>Остальные дни отдыхаем</Br></p></div>
+                  <div class="swiper-slide"><p>Lorem ipsum dolor sit amet.</p></div>
+                  <div class="swiper-slide"><p>Lorem ipsum dolor sit amet consectetur.</p></div>
+                  <div class="swiper-slide"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></div>
+                  <div class="swiper-slide"><p>Lorem ipsum dolor sit amet.</p></div>
+                  <div class="swiper-slide"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                  <div class="swiper-slide"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga.</p></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+           </section>
+
+          <section id="contacts">
+            <div class="container">
+                <h2> Наш Адрес и Контакты</h2>
+                <div class="row">
+                    <div class="cola"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.9129127272613!2d74.57784367583767!3d42.8535720037807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9cd93903fa7%3A0x10dcab53d19665d6!2sESCA%20-%20Bishkek%20International%20School!5e0!3m2!1sru!2skg!4v1699808822741!5m2!1sru!2skg" width="422" height="477" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    <div class="pepsi"><li><a href="https://wa.me/996707595070"><img src="./img/icons8-whatsapp-96.svg" alt="" srcset=""></a</li>
+                    <li><a href="https://t.me/QwertySpd"><img src="./img/icons8-телеграмма-app.svg" alt="" srcset=""></a></li>
+                    <li>Советская Боконбаева дом 3</li>
+                    </div>
+                </div>
+            </div>
+          </section>
+         
+
+         <footer>
+            <div class="footer-content">
+               <p>&copy; Dzhenishov Beksultan</p>
+               <ul class="main-word">
+                  <li><a class="word" href="#main">Главная</a></li>
+                  <li><a class="word" href="#">О нас</a></li>
+                  <li><a class="word" href="#contacts">Контакты</a></li>
+               </ul>
+            </div>
+         </footer>
+
+
+         <script src="//code.jivo.ru/widget/2xr5Bvs5mg" async></script>
+
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <script src="./javascript/burger.js"></script> 
+      <script src="./javascript/categories.js"></script>
+     <script src="./javascript/modaltg.js"></script>
+     <script src="./javascript/swiper.js"></script>
+     <script src="./javascript/tetris.js"></script>
+     <script src="./javascript/dynamicCategories.js"></script>
+     <script src="./javascript/accordion.js"></script>
+</body>
+</html> 

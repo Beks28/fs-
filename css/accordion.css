@@ -1,0 +1,47 @@
+#sec-accordion {
+    background-image: url(https://images.wallpaperscraft.ru/image/single/planeta_koltso_fioletovyj_149425_1920x1080.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ 
+ .accordion {
+    width: 100%;
+    max-width: 600px;
+ }
+ 
+ .accordion-item {
+    margin-bottom: 5px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: max-height 3s ease-in-out;
+    width: 100%;
+ }
+ 
+ .accordion-button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #942de9;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease 0s;
+    margin: 0 auto
+ }
+ 
+ .accordion-button:hover {
+    background-color: #2015be;
+ }
+ 
+ .accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: #ffa8f8;
+    box-sizing: border-box;
+    transition: max-height 0.3s ease-in-out;
+ }
+ 
+ .accordion-item.active .accordion-content {
+    display: block;
+ 
+ }

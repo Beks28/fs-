@@ -1,0 +1,131 @@
+#Categories
+{
+    background-image: url(https://i.artfile.ru/1920x1080_1248990_[www.ArtFile.ru].jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.output { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 30px; 
+    margin-top: 50px; 
+} 
+ 
+.output img { 
+    width: 150px; 
+    height: 100px; 
+} 
+ 
+ 
+.show { 
+    background-color: rgb(42, 117, 214) ;
+    cursor: pointer; 
+    border-radius: 30px; 
+    padding: 10px; 
+    display: flex; 
+    justify-content: center; 
+    color: white; 
+    
+transition: all 0.3s ease 0s;
+}
+h2{
+    color: rgb(149, 2, 217);
+    text-align: center;
+}
+ .wrap{
+    border-radius: 9px;
+    background-color: rgba(156, 43, 216, 0.7);
+    padding: 8px;
+  
+}
+.wrap p {
+    color: rgb(27, 255, 225);
+    text-align: center;
+}
+.wrap img{
+    border-radius: 8px;
+    transition: all 0.3s ease 0s;
+}
+.show:hover{
+    background-color: rgb(109, 16, 197);
+}
+.wrap img:hover{
+    width: 170px; 
+    height: 110px; 
+}
+
+
+.obr p{
+    color: aqua;
+}
+
+
+.categories__choise{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(135, 72, 251);
+}
+
+.message{
+    color: rgb(4, 255, 0);
+}
+.categoryBtn {
+    /* Общие стили для всех кнопок */
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.all {
+    background-color: #ff0000; /* Красный цвет для категории "all" */
+}
+
+.Bishkek {
+    background-color: #00ffe5; /* Зеленый цвет для категории "burgers" */
+}
+
+.Moscow {
+    background-color: #0000ff; /* Синий цвет для категории "pizzas" */
+}
+
+.Minsk {
+    background-color: #ffff00; /* Желтый цвет для категории "drinks" */
+}
+.category__button:nth-child(1){
+    background-color: rgb(255, 0, 208);
+}
+.category__button:nth-child(2){
+    background-color: #6e40b7;
+}
+.category__button:nth-child(3){
+    background-color: rgb(89, 0, 255);
+}
+.category__button:nth-child(4){
+    background-color: #aa00ff;
+}
+.category__button{
+    width: 55px;
+    height: 40px;
+    border-radius: 6px;
+    transition: all 0.3s ease 0s;
+
+  
+}
+
+.category__button:hover{
+    width: 65px;
+    height: 45px;
+    background-color: rgb(255, 0, 43);
+}
+.wrap-btn{
+    display: flex;
+    justify-content: space-around;
+}
+#Categories p{
+text-align: center;
+color: #00ffe5;
+}

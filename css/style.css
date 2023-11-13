@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=B612&family=Kalam&family=Lato&family=Nunito&family=Patrick+Hand&family=REM:wght@200&family=Roboto:ital,wght@0,300;0,500;0,700;1,400&family=Sarala&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'B612', sans-serif;
+font-family: 'Kalam', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Patrick Hand', cursive;
+font-family: 'REM', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Sarala', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 200px 0;
+    height: 1000px;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgba(113, 12, 128, 0.464);
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    column-gap: 30px;
+    font-size: 20px;
+}
+
+.header__nav img {
+    width: 100px;
+}
+
+.nav li a {
+    color: white;
+    font-weight: bold;
+}
+
+#main {
+    background-image: url(https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107_1280.jpg)
+}
+
+
+
+footer {
+    background-color: rgba(91, 0, 175, 0.897);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+ }
+ 
+ .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ .main-word {
+    display: flex;
+    column-gap: 24px;
+ 
+ }
+ 
+ .word {
+    color: white;
+ 
+ }
+ 
+ .word:hover {
+    text-decoration: underline;
+    color: #05cdac;
+ }
+
+
+
+
+
+ #accordionSection {
+    padding: 100px 0 0 0;
+    
+    color: white;
+  
+    
+ }
+ 
+ .plus {
+    width: 30px;
+    height: 30px;
+    transition: .3s;
+ }
+ 
+ .accordion__name {
+    background-color: rgba(11, 45, 133, 0.7);
+    padding: 20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+ }
+ 
+ .accordion__name p {
+    font-size: 20px;
+ }
+ 
+ .accordion__content {
+    overflow: hidden;
+    padding: 10px 20px;
+    max-height: 0;
+    transition: .5s ease-out;
+ }
+ 
+ .accordion__content p {
+    padding: 10px;
+ }
+ 
+ /* //////////////////////////// */
+ 
+ .accordion__wrap.accordion__active .accordion__content {
+    max-height: 400px;
+    transition: 1s;
+ }
+ 
+ .accordion__wrap.accordion__active .plus {
+    transform: rotate(45deg);
+    transition: .5s ease-out;
+ }
+ 
+ 
+ 
+ .itemImg {
+    width: 30%;
+    margin: 10px 0 0 0;
+ }
+
+ #accordionSection h2{
+display: flex;
+justify-content: center;
+margin-top: -15px;
+ }
+
+
+ .modalka {
+   display: none;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 197px;
+   background-color: #c83030;
+   border: 6px solid rgb(41, 24, 193);
+   box-shadow: 0 0 10px #6489d8;
+}
+.close-btn {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   cursor: pointer;
+   font-size: 36px;
+}
+
+.reklama{
+   font-size: 50px;
+}

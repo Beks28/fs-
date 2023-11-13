@@ -1,0 +1,34 @@
+.cola{
+    width: 50%;
+  
+    
+}
+.pepsi{
+    width: 45%;
+}
+
+.row{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+#contacts li{
+    list-style-type: none;
+    font-size: 20px;
+    color: aqua;
+    padding: 25px 70px ;
+
+}
+#contacts{
+    background-image: url(https://kartinki.pics/pics/uploads/posts/2022-08/thumbs/1660885724_4-kartinkin-net-p-fioletovii-kosmos-oboi-krasivo-5.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+}
+
+#contacts h2 {
+    color: aquamarine;
+    text-align: center;
+   
+}
